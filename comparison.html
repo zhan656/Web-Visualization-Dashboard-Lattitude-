@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Web Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> </link>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="navbar">
+    <a href="comparision.html">Comparison</a>
+    <a href="google.com">Data</a>
+    <a href="#" style = "float: left;"><b>Latitude</b></a>
+    <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Plots
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-menu" id="myDropdown">
+            <a href="temp.html">Max Temperature</a>
+            <a href="humid.html">Humidity</a>
+            <a href="cloud.html">Cloudiness</a>
+            <a href="wind.html">Wind Speed</a>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+        <div class="box box-right" style = "background-color: white; padding: 20px 50px; margin: 25px 10px; " align="center">
+            <h2 align="left"><b>Comparison: Latitude vs. X</b></h2>
+            <hr>
+            <img width="500" src="https://raw.githubusercontent.com/zhan656/Web-Visualization-Dashboard-Lattitude-/master/images/Fig1.png" alt="Funny Cat"/>
+            <img width="500" src="https://raw.githubusercontent.com/zhan656/Web-Visualization-Dashboard-Lattitude-/master/images/Fig2.png" alt="Funny Cat"/>
+       
+            <img width="500" src="https://raw.githubusercontent.com/zhan656/Web-Visualization-Dashboard-Lattitude-/master/images/Fig3.png" alt="Funny Cat"/>
+            <img width="500" src="https://raw.githubusercontent.com/zhan656/Web-Visualization-Dashboard-Lattitude-/master/images/Fig4.png" alt="Funny Cat"/>
+  
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+</body>
+</html>

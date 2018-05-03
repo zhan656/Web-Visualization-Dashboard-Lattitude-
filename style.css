@@ -63,4 +63,10 @@ body {background: lightgrey;}
 
 h2 {color: #33cccc;}
 
-h4 {color: #142952; line-height: 180%;}
+h6 {color: #142952; line-height: 180%;}
+
+.ImageBorder
+{
+    border-width: 3px;
+    border-color: #33cccc;
+}
