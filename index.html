@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Web Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> </link>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="navbar">
+    <a href="#home">Comparison</a>
+    <a href="google.com">Data</a>
+    <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Plots
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-menu" id="myDropdown">
+            <a href="temp.html">Max Temperature</a>
+            <a href="humid.html">Humidity</a>
+            <a href="cloud.html">Cloudiness</a>
+            <a href="wind.html">Wind Speed</a>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+        <div class="box box-left" style = "background-color: white; padding: 20px 16px; margin: 25px 50px">
+            <h2><b> Summary: Latitude vs. X</b></h2>
+            <hr>
+            <h4> 
+            The purpose of this project was to analyze ohw weather changes as you get closer to the equator. To accomplish this analysis, we first pulled 
+            data from the OpenWeatherMap API to accemble a dataset on over 500 cities.<br><br>
+            After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude.
+            </h4>
+        </div>
+    </div>
+  </div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+</body>
+</html>
+
